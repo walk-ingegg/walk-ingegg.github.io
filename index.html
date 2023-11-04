@@ -21,16 +21,19 @@
                 color: #f00;
             }
 
-            /* SNSスタイル */
-            .social-link {
-                background: rgba(150, 150, 150, 0.5);
-                color: #00f;
-            }
-
             /* ヒーロースタイル */
             .full-hero {
                 background-color: #c7dbfc;
-                height: 50vw;
+                height: 50vh;
+            }
+
+            /* SNSスタイル */
+            .social-link {
+                background: rgba(150, 150, 150, 0.5);
+                color: blue;
+                display: inline-block;
+                height: 36px;
+                width: 36px;
             }
 
             /* バイオグラフィースタイル */
@@ -39,9 +42,12 @@
             }
 
             .bio-box {
-                border: 1px solid #000;
-                width: 50%;
+                border: 1px solid black;
+                box-sizing: border-box;
+                float: left;
                 font-size: 1rem;
+                padding: 2%;
+                width: 25%;
             }
 
             .bio-box h3 {
@@ -53,7 +59,7 @@
             }
 
             .bio-copy a {
-                color: #080;
+                color: green;
             }
         </style>
     </head>
@@ -73,7 +79,6 @@
                 </li>
             </ul>
         </div>
-
         <h2>I'm an h2</h2>
         <div class="bio-wrapper">
             <div class="bio-box">
@@ -121,11 +126,9 @@
             </div>
             <div class="bio-box">
                 <h3>??</h3>
-                <div class="bio-copy">
-                    <p>
-                        The Future
-                    </p>
-                </div>
+                <p>
+                    The Future
+                </p>
             </div>
         </div>
     </body>
