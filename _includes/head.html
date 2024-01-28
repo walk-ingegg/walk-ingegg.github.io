@@ -1,5 +1,31 @@
 <head>
+    {% if page.title %}
+    <title>{{ page.title }} | Test Page</title>
+    <meta property="og:title" content="{{ page.title }}">
+    {% else %}
     <title>Test Page: Don't Panic</title>
+    <meta property="og:title" content="Test Page: Don't Panic">
+    {% endif %}
+    {% if page.type %}
+    <meta property="og:type" content="{{ page.type }}">
+    {% else %}
+    <meta property="og:type" content="website">
+    {% endif %}
+    {% if page.url %}
+    <meta property="og:url" content="{{ page.url }}">
+    {% else %}
+    <meta property="og:url" content="https://walk-ingegg.github.io/">
+    {% endif %}
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image }}">
+    {% else %}
+    <meta property="og:image" content="https://walk-ingegg.github.io/images/shark.jpg">
+    {% endif %}
+    <!-- {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="This is a dangerous site.">
+    {% endif %} -->
     <link href="/favicon.png" rel="icons">
     <link href="/apple-touch-icon.png" rel="apple-touch-icon">
     <meta charset="utf-8">
